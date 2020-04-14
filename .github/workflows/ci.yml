@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     services:
       db:
-        image: mongodb
-        ports: ['27017:27017']
+        image: postgres:latest
+        ports: ['5432:5432']
       redis:
         image: redis
         ports: ['6379:6379']
